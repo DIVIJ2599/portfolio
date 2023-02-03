@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --tw-gradient-to: #334155;
+    --tw-gradient-from: #0f172a;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(15 23 42 / 0));
+    background-image: linear-gradient(to right, var(--tw-gradient-stops)); 
+}
+
+.icons{
+    transition-duration: 200ms;
+    transition-property: all;
+    transition-timing-function: ease-in;
+}
+
+.icons:hover{
+    transform: scale(1.15);
+}
